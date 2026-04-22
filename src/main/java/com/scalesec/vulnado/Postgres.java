@@ -43,11 +43,11 @@ public class Postgres {
             stmt.executeUpdate("DELETE FROM comments");
 
             // Insert seed data
-            insertUser("admin", "!!SuperSecretAdmin!!");
-            insertUser("alice", "AlicePassword!");
-            insertUser("bob", "BobPassword!");
-            insertUser("eve", "$EVELknev^l");
-            insertUser("rick", "!GetSchwifty!");
+            //insertUser("admin", "!!SuperSecretAdmin!!");
+          //  insertUser("alice", "AlicePassword!");
+            //insertUser("bob", "BobPassword!");
+            //insertUser("eve", "$EVELknev^l");
+            //insertUser("rick", "!GetSchwifty!");
 
             insertComment("rick", "cool dog m8");
             insertComment("alice", "OMG so cute!");
