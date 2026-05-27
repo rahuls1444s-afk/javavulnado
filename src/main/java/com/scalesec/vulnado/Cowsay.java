@@ -2,12 +2,22 @@ package com.scalesec.vulnado;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import org.apache.commoms.*;
 
 public class Cowsay {
+public static validate (String input){
+  if (input == null) return null;
+
+  StringBuilder encoded = new StringBuilder();
+  for (int i=0; i<input.length(); i++){
+    char ch = input.charAt(i);
+    encoded.append("&#').append((int) ch).append(";");
+  }
+  return encoded.toString();
+}
+  
   public static String run(String input) {
     ProcessBuilder processBuilder = new ProcessBuilder();
-    String validatedInput = StringEscapeUtils.escapeHtml4(input);
+    String validatedInput = validate(input);
     String cmd = "/usr/games/cowsay '" + validatedInput + "'";
     System.out.println(cmd);
     processBuilder.command("bash", "-c", cmd);
