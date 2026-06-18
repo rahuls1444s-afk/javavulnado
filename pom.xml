@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.5</version>
+			<version>42.2.13</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
@@ -62,7 +62,7 @@
 		<dependency>
 		    <groupId>io.jsonwebtoken</groupId>
 		    <artifactId>jjwt-jackson</artifactId>
-		    <version>0.10.5</version>
+		    <version>0.10.7</version>
 		    <scope>runtime</scope>
 		</dependency>
 	</dependencies>
